@@ -6,3 +6,6 @@ Em app > db > seeds.rb você adiciona um código para registrar os dados, e em s
 
 Imagem em Issues. 
 
+
+Há também o uso de `gem faker` para simular os dados 
+
