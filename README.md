@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Uso do `rails db:seed` para adicionar dados na aplicação sem inserir um a um. 
 
-Things you may want to cover:
+Em app > db > seeds.rb você adiciona um código para registrar os dados, e em seguida usar o `rails db:seed` no terminal. 
 
-* Ruby version
+Imagem em Issues. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
