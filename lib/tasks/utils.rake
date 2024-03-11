@@ -2,8 +2,15 @@
 #rails g task utils setup_user
 
 namespace :utils do
-  desc "TODO"
+  desc "Popular a tabela de users"
   task setup_user: :environment do
+    10.times do |i|
+      user_name = Faker::Name.name
+      user_email = Faker::Internet.email
+      user = "#{user_name} - #{user_email}"
+      puts "#{user} cadastrado"
+      User.create(name: user_name, email: user_email)
+    end
   end
 
 end
@@ -23,6 +30,6 @@ rake db:structure:dump     # Dumps the database structure to db/structure.sql
 rake db:structure:load     # Recreates the databases from the structure.sql file
 rake notes:custom          # Enumerate a custom annotation, specify with ANNOTATION=CUSTOM
 rake routes                # Print out all defined routes in match order, with names
-➜ rake utils:setup_user      # TODO
+➜ rake utils:setup_user      # Popular a tabela de users
 
 =end
