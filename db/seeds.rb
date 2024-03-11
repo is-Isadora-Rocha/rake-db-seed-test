@@ -9,7 +9,19 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-10.times do |i|
+=begin 10.times do |i|
   puts "Usuário #{i} cadastrado "
-  User.create(name: "Usuário #{i}", email: "userexample@gmail.com")
+  User.create(name: "Usuário #{i}", email: "usuario@gmail.com")
+end
+=end
+
+# gem faker
+# https://github.com/faker-ruby/faker
+
+10.times do |i|
+  user_name = Faker::Name.name
+  user_email = Faker::Internet.email
+  user = "#{user_name} - #{user_email}"
+  puts "#{user} cadastrado"
+  User.create(name: user_name, email: user_email)
 end
