@@ -33,3 +33,5 @@ rake routes                # Print out all defined routes in match order, with n
 ➜ rake utils:setup_user      # Popular a tabela de users
 
 =end
+
+# no Terminal > rake utils:setup_user
